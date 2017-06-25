@@ -1,0 +1,88 @@
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<h1 style="margin-left:36px; text-align: center; font-size: 40px; margin-bottom: 50px; font-family: 'Lato', sans-serif;">FIND BY LOCATION  </h1>
+
+<ul> 
+    <div class="circular">
+        <li class="nobullet">
+            <p class="loc_text"><a href="">NEW YORK</a></p>
+            <img src="https://media.timeout.com/images/103444978/image.jpg" class="resize_image">
+        </li>
+    
+        <li class="nobullet">
+            <p class="loc_text"><a href="#chicago">CHICAGO</a></p>
+            <a href=""><img src="https://images1.apartments.com/i2/dVyplwWzkt-yGWCm4-Lt3yJY3z-6NL02QyWOk8Ctfo0/110/chicago-il-cloud-gate-at-dusk.jpg" class="resize_image"></a>
+        </li>
+        <li class="nobullet">
+            <p class="loc_text"><a href="#philly">PHILADELPHIA</a></p>
+            <a href=""></a><img src="http://photos.visitphilly.com/love-park-bkrist-900vp.jpg" class="resize_image"></a>
+        </li>
+        <li class="nobullet">
+            <p class="loc_text"><a href="#boston">BOSTON</a></p>
+            <a href=""><img src="http://www.ninezero.com/images/1700-960/sailboats-in-boston-0a5755ca.jpg" class="resize_image"></a>
+        </li>
+        <li class="nobullet">
+            <p class="loc_text"><a href="#seattle">SEATTLE</a></p>
+            <a href=""><img src="https://media-cdn.tripadvisor.com/media/photo-s/03/9b/30/26/seattle.jpg" class="resize_image"></a>
+        </li>
+        <li class="nobullet">
+            <p class="loc_text"><a href="#sanfran">SAN FRANCISCO</a></p>
+            <a href=""><img src="http://ninezero.com/images/1700-960/sailboats-in-boston-0a5755ca.jpg" class="resize_image"></a>
+        </li>
+   </div>
+
+    <!--<div id="chicago" style="font-size: 50px !important" class=".loc_text .nobullet">Chicago</div>-->
+</ul>
+
+<style>
+    
+    .loc_text{
+        
+        
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-family: 'Lato', sans-serif;
+        
+    }
+    
+    
+    .circular{
+        border-radius: 50%;
+        
+    }
+    .nobullet{
+        list-style-type: none;
+        width: 300px;
+        height:300px;
+        float:left;
+        margin-right: 40px;
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 3px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .resize_image{
+        
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        border: 5px solid #8ACFFC;
+      
+    }
+    
+</style>
+
+<script>
+
+    $(".resize_image").on('mouseenter', function(){
+        $(this).animate({ margin: -10, width: "+=5", height: "+=5" });
+    })
+    .on('mouseleave', function(){
+        $(this).animate({ margin: 0, width: "-=5", height: "-=5" });
+    })
+
+</script>

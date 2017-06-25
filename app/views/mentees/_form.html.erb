@@ -1,0 +1,42 @@
+<%= form_with(model: mentee, local: true) do |form| %>
+  <% if mentee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mentee.errors.count, "error") %> prohibited this mentee from being saved:</h2>
+
+      <ul>
+      <% mentee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field" style="text-align: center">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :mentee_first_name, :size=>"50%" %>
+  </div>
+
+  <div class="field" style="text-align: center">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :mentee_last_name, :size=>"50%" %>
+  </div>
+
+  <div class="field" style="text-align: center">
+    <%= form.label :university %>
+    <%= form.text_field :university, :size=>"50%", id: :mentee_university %>
+  </div>
+
+  <div class="field" style="text-align: center">
+    <%= form.label :email %>
+    <%= form.text_field :email, :size=>"50%", id: :mentee_email %>
+  </div>
+
+  <div class="field" style="text-align: center">
+    <%= form.label :skills %>
+    <div class="skillbox"><%= form.text_area :skills, id: :mentee_skills %></div>
+  </div>
+
+  <div class="actions" style="text-align: center">
+    <%= form.submit %>
+  </div>
+<% end %>

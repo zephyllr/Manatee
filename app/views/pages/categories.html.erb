@@ -1,0 +1,98 @@
+<h1 style="margin-left:36px; text-align: center; font-size: 40px; margin-bottom: 50px;">FIND BY CATEGORIES  </h1>
+
+<ul> 
+    <div class="circular">
+        <li class="nobullet">
+            <p class="loc_text"><a href="animal">ANIMAL HANDLING</a></p>
+            <img src="http://www.ahwla.org.uk/site/tutorials/BVA/BVA04-Hamster/BVA04-Images/Ham1.jpg" class="resize_image">
+        </li>
+    
+        <li class="nobullet">
+            <p class="loc_text"><a href="#cs">COMPUTER SCIENCE</a></p>
+            <a href=""><img src="http://www.athens.edu/images/coas/programs/computer-science.jpg?x75869" class="resize_image"></a>
+        </li>
+        <li class="nobullet">
+            <p class="loc_text"><a href="#engineer">ENGINEERING</a></p>
+            <a href=""></a><img src="http://www.ecob.org/resources/ECOB%20Home%20pics/engineering-pictures-12.jpg" class="resize_image"></a>
+        </li>
+        <li class="nobullet">
+            <p class="loc_text"><a href="#finance">FINANCE</a></p>
+            <a href=""><img src="https://www.intouchcrm.co.uk/app/fileuploads/1/1038/e3242963-a5b9-4d99-8dac-47a9d4d984b9.jpg" class="resize_image"></a>
+        </li>
+        <li class="nobullet">
+            <p class="loc_text"><a href="#gov">GOVERNMENT</a></p>
+            <a href=""><img src="http://www.maximizestrategies.com/wp-content/uploads/2013/10/Government.jpg" class="resize_image"></a>
+        </li>
+        <li class="nobullet">
+            <p class="loc_text"><a href="#pharm">PHARMACEUTICAL</a></p>
+            <a href=""><img src="http://victoriabc-logistica.com/wp-content/uploads/2014/10/shutterstock_89254516.jpg" class="resize_image"></a>
+        </li>
+        <li class="nobullet">
+            <p class="loc_text"><a href="#restaurant">RESTAURANT</a></p>
+            <a href=""></a><img src="http://parkresto.com/wp-content/themes/parkrestaurant/images/11onlinereservationpark.jpg" class="resize_image"></a>
+        </li>
+        <li class="nobullet">
+            <p class="loc_text"><a href="#sales">SALES</a></p>
+            <a href=""><img src="https://www.cebglobal.com/blogs/files/2016/01/Handshake-business-deal-agreement-working-together-sales-rep-challenger-large.jpg" class="resize_image"></a>
+        </li>
+        <li class="nobullet">
+            <p class="loc_text"><a href="#training">TRAINING</a></p>
+            <a href=""><img src="https://static01.nyt.com/images/2010/12/01/sports/Babies/Babies-jumbo.jpg" class="resize_image"></a>
+        </li>
+   </div>
+
+    <!--<div id="chicago" style="font-size: 50px !important" class=".loc_text .nobullet">Chicago</div>-->
+</ul>
+
+<style>
+    
+    .loc_text{
+        
+        
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-family: 'Lato', sans-serif;
+        
+    }
+    
+    
+    .circular{
+        border-radius: 50%;
+        
+    }
+    .nobullet{
+        list-style-type: none;
+        width: 300px;
+        height:300px;
+        float:left;
+        margin-right: 40px;
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 3px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .resize_image{
+        
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        border: 5px solid #8ACFFC;
+      
+    }
+    
+</style>
+
+<script>
+
+    $(".resize_image").on('mouseenter', function(){
+        $(this).animate({ margin: -10, width: "+=5", height: "+=5" });
+    })
+    .on('mouseleave', function(){
+        $(this).animate({ margin: 0, width: "-=5", height: "-=5" });
+    })
+
+</script>
